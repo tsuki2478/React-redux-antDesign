@@ -1,0 +1,30 @@
+
+@import './../../style/default.less';
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to bottom right, #F6F8FA, #1FBFA7);
+  .login-form{
+    width: 320px;
+    height: 340px;
+    padding: 36px;
+    box-shadow: 0 0 100px rgba(0,0,0,.08);
+    background: #fff;
+    .login-logo{
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      margin-bottom: 24px;
+      span {
+        vertical-align: text-bottom;
+        font-size: @fontD;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+    }
+  }
+}

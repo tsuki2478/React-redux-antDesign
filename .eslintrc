@@ -1,0 +1,22 @@
+
+  {
+    "parser": "babel-eslint",
+    "plugins": [
+      "react",
+      "react-hooks"
+    ],
+    "extends": "react-app",
+    "rules": {
+      "no-multi-spaces": 1,
+      "react/jsx-space-before-closing": 1,   
+      "react-hooks/rules-of-hooks": "error",      
+      "jsx-quotes": 1,
+      "react/no-string-refs": 1,       
+      "react/jsx-pascal-case": 1,        
+      "no-unused-expressions": 0,
+      "react/no-direct-mutation-state": 0,
+      "no-fallthrough":"off",
+      "react/sort-comp":0,
+      "react/react-in-jsx-scope":0
+    }
+  }

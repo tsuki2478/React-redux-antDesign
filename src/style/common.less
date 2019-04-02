@@ -1,0 +1,135 @@
+@import './default.less';
+@import './loading.less';
+@color: #eee;
+.container {
+    display: flex;
+    height: 100%;
+    .NavLeft {
+        width: 15%;
+        min-width: 180px;
+        height: calc(100vh);
+        background-color: @colorR;
+        z-index: 1000;
+    }
+    .main {
+        height: calc(100vh);
+        background-color: @colorA;
+    }
+    .content {
+        padding: 20px;
+    }
+}
+// 侧边菜单颜色调节
+.ant-menu-dark.ant-menu-inline, .ant-menu-dark.ant-menu-vertical, .ant-menu-dark.ant-menu-vertical-left, .ant-menu-dark.ant-menu-vertical-right
+{
+background:@colorR ;
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+background:@colorR ;
+
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-item, .ant-menu-dark.ant-menu-inline .ant-menu-submenu-title{
+margin: 0;
+}
+// 菜单选中颜色，可以独立于webpack的全局配置 
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+margin: 0;
+    
+}
+.ant-layout-sider-children {
+}
+
+.content-wrap {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-top: -3px;
+    .ant-table-wrapper {
+        margin-left: -1px;
+        margin-right: -2px;
+    }
+}
+
+.ant-card {
+    button {
+        margin-right: 10px;
+    }
+}
+
+#root {
+    height: 100%;
+}
+
+// 全部content内容必须要加的类名
+.result-table {
+    padding: 24px;
+    background: #fbfbfb;
+    height: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+.table-activity {
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td {
+        text-align: center;
+    }
+}
+.table-header {
+    padding: 16px;
+    background: #fbfbfb;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    text-align: right;
+}
+.list {
+    padding: 24px;
+    background: #fbfbfb;
+    border: 1px solid #d9d9d9;
+}
+.Spin {
+    text-align: center;
+}
+/* 表单的模态框显示... */
+.activity-modal {
+    width: 800px !important;
+    .ant-input-number{
+        width: 100%;
+    }
+}
+@media (max-width: 991px){
+   .activity-modal {
+       width: 700px  !important;
+  }
+}
+@media (max-width: 700px){
+   .activity-modal {
+       width: 500px  !important;
+  }
+}
+@media (max-width: 550px){
+   .activity-modal {
+       width: 360px  !important;
+  }
+}
+
+/* table的模态框显示... */
+.list-modal {
+    width: 900px !important;
+    min-height: 400px;
+}
+@media (max-width: 991px){
+   .list-modal {
+       width: 700px  !important;
+  }
+}
+@media (max-width: 700px){
+   .list-modal {
+       width: 500px  !important;
+  }
+}
+@media (max-width: 550px){
+   .list-modal {
+       width: 360px  !important;
+  }
+}

@@ -1,0 +1,31 @@
+@import './../../style/default.less';
+.header {
+    .header-top {
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+        text-align: right;
+        background-color: @colorS;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+        font-size: @fontD;
+        .logo {
+            line-height: 60px;
+            text-align: left;
+            font-size: @fontC;
+            img {
+                height: 40px;
+                vertical-align: middle;
+            }
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.simple-page {
+    .header-top {
+        background: #1890ff;
+        color: @colorM;
+    }
+}
